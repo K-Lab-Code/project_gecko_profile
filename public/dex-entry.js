@@ -6,20 +6,17 @@ async function start(){
 async function getData(){
     const url = location.href
     const ary = url.split('?gecko=');
-    const response = await fetch(`./grab?gecko=${ary[2]}`);
+    const response = await fetch(`./grab?gecko=${ary[1]}`);
     //, {method:"Get", headers: {"Content-Type": "application/json"}}
     const data = await response.json();
-    console.log(data[0]);
     return data;
 }
 
-function buildTable(data) {
+function buildTable(gecko) {
     const table = document.getElementById('table');
     const temp = document.getElementById('temp').content;
-    let geckoEntry;
-    for (const gecko of data){
+    let geckoEntry = temp.cloneNode('true');
         console.log(gecko);
-        geckoEntry = temp.cloneNode('true');
         geckoEntry.children[0].children[1].innerHTML = gecko.name;
         geckoEntry.children[0].children[2].src = gecko.img;
         geckoEntry.children[0].children[4].innerHTML = gecko.family;
@@ -29,7 +26,6 @@ function buildTable(data) {
         geckoEntry.children[0].children[12].innerHTML = gecko.diet;
         table.appendChild(geckoEntry);
     }
-}
 
 
 

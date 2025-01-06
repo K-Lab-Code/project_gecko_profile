@@ -18,13 +18,14 @@ router.get('/storage', (req, res)=>{
 router.get('/grab', (req, res)=>{
     fs.readFile('storage.json', 'utf8', (err, data)=>{
         const obj = JSON.parse(data);
-        for(gecko of data){
+        for(gecko of obj){
+            console.log(gecko.name);
+            console.log(req.query.gecko);
             if (gecko.name === req.query.gecko) {
                 res.json(gecko);
             }
         }
-        res.json(JSON.parse(data));
-        //res.json(JSON.stringify(data));
+
     });
 });
 
