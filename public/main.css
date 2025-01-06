@@ -1,0 +1,31 @@
+.info {
+    flex-wrap: wrap;
+    flex: 1 1 25;
+}
+
+.info-image {
+    display: inline;
+    max-width: 200px;
+    max-height: 150px;
+}
+
+.box {
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    display: flex;
+    background-color: white;
+}
+
+.inline {
+    flex-wrap: wrap;
+    flex: 1 0 25;
+}
+
+header {
+    background-color: red;
+}
+
+body {
+    background-color: blue;
+}
