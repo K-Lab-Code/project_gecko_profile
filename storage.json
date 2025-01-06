@@ -1,1 +1,35 @@
-[{"name":"Leopard Gecko","genus":"Eublepharis","species":"macularius","img":"https://upload.wikimedia.org/wikipedia/commons/5/5b/Eublepharis_macularius1.jpg","family":"Eublepharidae","temp":"Warm side: 80-90F, Cool side: 75-80F, Basking area:90-95F Night: 65-70F","humidity":"30-40%","tank":"36X18X18","diet":"Live Insects"}]
+[
+    {
+        "name":"Leopard Gecko",
+        "genus":"Eublepharis",
+        "species":"macularius",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/5/5b/Eublepharis_macularius1.jpg",
+        "family":"Eublepharidae",
+        "temp":"Warm side: 80-90F, Cool side: 75-80F, Basking area:90-95F Night: 65-70F",
+        "humidity":"30-40%",
+        "tank":"36X18X18",
+        "diet":"Live Insects"
+        },
+        {
+            "name":"Crested Gecko",
+            "genus":"Correlophus",
+            "species":"ciliatus",
+            "img":"https://upload.wikimedia.org/wikipedia/commons/d/d9/Crested_gecko_-_1.jpg",
+            "family":"Diplodactylidae",
+            "temp":"Warm side: 80-90F, Cool side: 75-80F, Basking area:90-95F Night: 65-70F",
+            "humidity":"Day:40-50%, Night:60-80%",
+            "tank":"18X18X36",
+            "diet":"Live Insects & Fruit Paste"
+        },
+        {
+            "name":"Gargoyle Gecko",
+            "genus":"Rhacodactylus",
+            "species":"auriculatus",
+            "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Gargoylegecko_2017_%28cropped%29.png/1920px-Gargoylegecko_2017_%28cropped%29.png",
+            "family":"Diplodactylidae",
+            "temp":"Warm side: 80-90F, Cool side: 75-80F, Basking area:90-95F Night: 65-70F",
+            "humidity":"Day:40-50%, Night:60-80%",
+            "tank":"18X18X36",
+            "diet":"Live Insects & Fruit Paste"
+        }
+    ]
