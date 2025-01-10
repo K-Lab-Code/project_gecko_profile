@@ -3,10 +3,11 @@ const fs = require('fs');
 const router = express.Router();
 
 
-
+/*
 router.get('/test', (req, res)=>{
     res.send('test');
 });
+*/
 
 router.get('/storage', (req, res)=>{
     fs.readFile('storage.json', 'utf8', (err, data)=>{
@@ -28,7 +29,7 @@ router.get('/grab', (req, res)=>{
 
     });
 });
-
+/*
 router.post('/storage', (req, res)=>{
     res.send('test');
 });
@@ -40,5 +41,6 @@ router.patch('/storage', (req, res)=>{
 router.delete('/storage', (req, res)=>{
     res.send('test');
 });
+*/
 
 exports.router = router;
