@@ -1,3 +1,7 @@
+:root{
+    --background: rgb(200, 200, 200);
+}
+
 .info {
     flex-wrap: wrap;
     flex: 1 1 25;
@@ -15,6 +19,8 @@
     border-radius: 5px;
     display: flex;
     background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .inline {
@@ -22,12 +28,30 @@
     flex: 1 0 25;
 }
 
+#head {
+    text-align: center;
+    position: relative;
+    left: -2.5%;
+}
 header {
-    background-color: red;
+    background-color: rgb(23, 180, 219);
+    margin: 0px;
+    width: 106%;
+    position: relative;
+    left: -8px;
+    top: -23px;
+    padding-top: 5px;
+    padding-bottom: 1px;
 }
 
 body {
-    background-color: blue;
+    background-color: var(--background);
+}
+
+#table {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--background);
 }
 
 @media all and (max-width: 600px) {
@@ -36,5 +60,23 @@ body {
         max-width: 200px;
         max-height: 300px;
     }
-
+    #table {
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: var(--background);
+    }
+    body {
+        background-color: var(--background);
+    }
+    .box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    #head {
+        text-align: center;
+        position: relative;
+        left: -5px;
+    }
+ 
 }
